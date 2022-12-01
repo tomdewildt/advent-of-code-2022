@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "advent-of-code-2022",
+            "type": "python",
+            "request": "launch",
+            "module": "advent_of_code",
+            "justMyCode": true,
+            "args": [
+                "${input:challenge}",
+                "./data/day${input:challenge}.txt"
+            ]
+        },
+    ],
+    "inputs": [
+        {
+            "id": "challenge",
+            "type": "promptString",
+            "description": "Enter a challenge number.",
+            "default": "1",
+        },
+    ]
+}
