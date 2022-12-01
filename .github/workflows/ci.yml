@@ -1,0 +1,37 @@
+name: ci
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONPATH: "src:test"
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.8
+      - name: Setup pip
+        run: python -m pip install --upgrade pip
+      - name: Install dependencies
+        run: |
+          for f in requirements/*.txt; do
+            pip install -r "$f";
+          done
+      - name: Run lint
+        run: pylint src test
+      - name: Run test
+        run: pytest --cov=advent_of_code --cov-report=xml test
+      - name: Upload coverage
+        uses: codecov/codecov-action@v3
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          file: coverage.xml
+          fail_ci_if_error: true
