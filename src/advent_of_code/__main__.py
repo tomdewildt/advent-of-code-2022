@@ -6,11 +6,13 @@ from advent_of_code.exceptions import ChallengeNotFound, InputNotFound
 from advent_of_code.utils import load_input
 from advent_of_code.days import (
     day1,
+    day2,
 )
 
 
 _CHALLENGES = {
     1: day1,
+    2: day2,
 }
 
 
