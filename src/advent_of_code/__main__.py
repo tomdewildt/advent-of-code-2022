@@ -7,12 +7,14 @@ from advent_of_code.utils import load_input
 from advent_of_code.days import (
     day1,
     day2,
+    day3,
 )
 
 
 _CHALLENGES = {
     1: day1,
     2: day2,
+    3: day3,
 }
 
 
