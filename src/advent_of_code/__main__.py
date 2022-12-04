@@ -8,6 +8,7 @@ from advent_of_code.days import (
     day1,
     day2,
     day3,
+    day4,
 )
 
 
@@ -15,6 +16,7 @@ _CHALLENGES = {
     1: day1,
     2: day2,
     3: day3,
+    4: day4,
 }
 
 
