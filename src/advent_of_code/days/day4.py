@@ -1,4 +1,3 @@
-# 31-31,32-40
 def part1(challenge_input):
     count = 0
 
