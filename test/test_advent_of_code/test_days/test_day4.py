@@ -24,5 +24,4 @@ class TestPart2:
         ],
     )
     def test_part2(self, challenge_input, challenge_output):
-        print(challenge_input)
         assert day4.part2(challenge_input) == challenge_output
