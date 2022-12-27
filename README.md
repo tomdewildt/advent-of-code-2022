@@ -1,5 +1,5 @@
 # Advent of Code 2022
-[![Build](https://img.shields.io/github/workflow/status/tomdewildt/advent-of-code-2022/ci/master)](https://github.com/tomdewildt/advent-of-code-2022/actions?query=workflow%3Aci)
+[![Build](https://img.shields.io/github/actions/workflow/status/tomdewildt/advent-of-code-2022/ci.yml?branch=master)](https://github.com/tomdewildt/advent-of-code-2022/actions/workflows/ci.yml)
 [![Coverage](https://img.shields.io/codecov/c/gh/tomdewildt/advent-of-code-2022)](https://codecov.io/gh/tomdewildt/advent-of-code-2022)
 [![License](https://img.shields.io/github/license/tomdewildt/advent-of-code-2022)](https://github.com/tomdewildt/advent-of-code-2022/blob/master/LICENSE)
 
