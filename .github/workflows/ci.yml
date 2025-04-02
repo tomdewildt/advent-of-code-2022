@@ -30,7 +30,7 @@ jobs:
       - name: Run test
         run: pytest --cov=advent_of_code --cov-report=xml test
       - name: Upload coverage
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           file: coverage.xml
